@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>EEG Live Simulation</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>EEG Live Data Simulation</h1>
-  <canvas id="eegCanvas" width="1000" height="400"></canvas>
+  <div class="container">
+    <!-- Top Header -->
+    <div class="header">
+      <h1>EEG Live Data Simulation</h1>
+    </div>
+
+    <!-- Main Body (Split Row) -->
+    <div class="bottom">
+      <!-- EEG Canvas View (Left Side) -->
+      <div class="left-panel">
+        <canvas id="eegCanvas" width="800" height="400"></canvas>
+      </div>
+
+      <!-- Right Side (Placeholder for future UI/tools) -->
+      <div class="right-panel">
+        <p><strong>Future controls, UI or info here</strong></p>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
