@@ -42,6 +42,14 @@
             border-radius: 10px;
         }
 
+
+        .middle-panel {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
         canvas {
             background-color: rgba(0, 0, 0, 0.6);
             border-radius: 5px;
@@ -115,6 +123,38 @@
             border-radius: 5px;
             background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #6a11cb, #2575fc);
         }
+
+        .cta-btn {
+            background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #6a11cb, #2575fc);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .legal-footer {
+            background: #111;
+            color: #bbb;
+            text-align: center;
+            padding: 20px 15px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .legal-footer p {
+            margin: 5px 0;
+        }
+
+        .legal-footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .legal-footer a:hover {
+            color: #00b7ff;
+        }
     </style>
 </head>
 
@@ -133,19 +173,42 @@
             <nav class="nav-links">
                 <a href="#">Home</a>
                 <a href="#">Products</a>
-                <a href="#">Technology</a>
+                <a href="#">AI Technology</a>
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
                 <a href="#">Careers</a>
             </nav>
         </header>
+
+
+
         <!-- Top Header -->
         <div class="header2">
             <h1>Brain MOD header</h1>
             <h2> A very simple way to get to heaven, see the gods and say hi to them</h2>
-            A very simple way to get to heaven, see the gods and say hi to them
+            <center>            A very simple way to get to heaven, see the gods and say hi to them,A very simple way to get to heaven, see the gods and say hi to them </center>
+
+            <br>
+            <br>
+            <button class="cta-btn">Stay Tune for NewsLetters</button>
         </div>
 
+
+        <br>
+
+
+        <div class="bottom">
+
+            <div class="middle-panel">
+                <center>
+                    <canvas id="eegCanvas" width="1200" height="200"></canvas>
+                </center>
+
+
+            </div>
+
+        </div>
+        <br>
 
         <!-- Main Body (Split Row) -->
         <div class="bottom">
@@ -157,12 +220,25 @@
 
             <!-- Right Side (Placeholder for future UI/tools) -->
             <div class="right-panel">
-                <p><strong>Future controls, UI or info here</strong></p>
+                <p><strong>Device and TECH shape</strong></p>
             </div>
         </div>
+        <br>
+        <div class="middle-panel">
+            sample
+        </div>
+        <br>
+    <footer class="legal-footer">
+        <p>©2025 BrainMOD. All Rights Reserved.</p>
+        <p>
+            The BrainMOD platform is currently in clinical development and has not been evaluated by or received
+            marketing authorization from the U.S. Food and Drug Administration (FDA), Therapeutic Goods Administration (TGA),
+            or any comparable foreign regulatory authority.
+        </p>
+    </footer>
+    <script src="script.js"></script>
     </div>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
