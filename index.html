@@ -1,69 +1,142 @@
+Put your HTML text here
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>EEG Live Simulation</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('brainmod_10_teasermockup_hires_cropped_highreser.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8" />
+    <title>EEG Live Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('brainmod_10_teasermockup_hires_cropped_highreser.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
 
-    .container {
-      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for readability */
-      min-height: 100vh;
-      padding: 20px;
-    }
+        .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            /* semi-transparent overlay for readability */
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-    .header {
-      text-align: center;
-      padding: 20px;
-    }
+        .header1 {}
 
-    .bottom {
-      display: flex;
-      gap: 20px;
-    }
+        .header2 {
+            text-align: center;
+            padding: 20px;
+        }
 
-    .left-panel, .right-panel {
-      flex: 1;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 10px;
-    }
+        .bottom {
+            display: flex;
+            gap: 20px;
+        }
 
-    canvas {
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 5px;
-    }
-  </style>
+        .left-panel,
+        .right-panel {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        canvas {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+        }
+
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            /* Change as needed */
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Left 70% navigation */
+        .nav-links {
+            flex: 0 0 70%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007BFF;
+        }
+
+        /* Right 30% logo */
+        .logo-container {
+            flex: 0 0 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container img {
+            max-height: 50px;
+            /* Adjust logo size */
+            margin-left: 20px;
+        }
+    </style>
 </head>
+
+
 <body>
-  <div class="container">
-    <!-- Top Header -->
-    <div class="header">
-      <h1>EEG Live Data Simulation</h1>
+
+
+    <div class="container">
+        <header class="top-header">
+
+            <div class="logo-container">
+                <img src="your-logo.png" alt="Company Logo">
+            </div>
+            <!-- Right Section: Logo -->
+            <!-- Left Section: Navigation -->
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Technology</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Careers</a>
+            </nav>
+        </header>
+        <!-- Top Header -->
+        <div class="header2">
+            sample
+            <h2>Brain mod header</h2>
+        </div>
+
+        <!-- Main Body (Split Row) -->
+        <div class="bottom">
+            <!-- EEG Canvas View (Left Side) -->
+            <div class="left-panel">
+                <h5>EEG Live Data Simulation</h5>
+                <canvas id="eegCanvas" width="400" height="200"></canvas>
+            </div>
+
+            <!-- Right Side (Placeholder for future UI/tools) -->
+            <div class="right-panel">
+                <p><strong>Future controls, UI or info here</strong></p>
+            </div>
+        </div>
     </div>
 
-    <!-- Main Body (Split Row) -->
-    <div class="bottom">
-      <!-- EEG Canvas View (Left Side) -->
-      <div class="left-panel">
-        <canvas id="eegCanvas" width="800" height="400"></canvas>
-      </div>
-
-      <!-- Right Side (Placeholder for future UI/tools) -->
-      <div class="right-panel">
-        <p><strong>Future controls, UI or info here</strong></p>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
