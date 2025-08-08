@@ -4,6 +4,44 @@
   <meta charset="UTF-8" />
   <title>EEG Live Simulation</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('brainmod_10_teasermockup_hires_cropped_highreser.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for readability */
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .bottom {
+      display: flex;
+      gap: 20px;
+    }
+
+    .left-panel, .right-panel {
+      flex: 1;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    canvas {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
